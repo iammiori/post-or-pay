@@ -11,7 +11,7 @@ export default function DashboardHeader({ month }: DashboardHeaderProps) {
   return (
     <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight">대시보드</h1>
+        <h1 className="text-2xl font-bold tracking-tight">📝 Post or Pay 💸</h1>
         <p className="text-muted-foreground">
           {month} 기술블로그 미션 현황입니다
         </p>

@@ -1,6 +1,6 @@
 // hooks/use-articles.ts
 import { Article, MonthlyProgressType } from '@/app/_types/article';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // 현재 사용자 ID (실제 구현에서는 인증 시스템과 연동)
 const CURRENT_USER_ID = 'current-user-id';
@@ -13,7 +13,8 @@ const MOCK_ARTICLES: Article[] = [
     url: 'https://example.com/next-app-router',
     description:
       'Next.js 14에서 도입된 App Router 구조에 대한 심층 분석과 사용 방법을 알아봅니다.',
-    thumbnailUrl: 'https://via.placeholder.com/600x400?text=Next.js',
+    thumbnailUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ35Qqfexsha0k8HoioX5RExmp8nC1gHFjBcw&s',
     authorId: CURRENT_USER_ID,
     authorName: '김개발',
     createdAt: '2025-03-10T09:00:00Z',
@@ -24,7 +25,8 @@ const MOCK_ARTICLES: Article[] = [
     url: 'https://example.com/tailwind-design-system',
     description:
       'Tailwind CSS를 활용해 확장 가능한 디자인 시스템을 구축하는 방법과 best practice를 소개합니다.',
-    thumbnailUrl: 'https://via.placeholder.com/600x400?text=Tailwind',
+    thumbnailUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ35Qqfexsha0k8HoioX5RExmp8nC1gHFjBcw&s',
     authorId: 'user-2',
     authorName: '이디자인',
     createdAt: '2025-03-12T10:30:00Z',
@@ -35,7 +37,8 @@ const MOCK_ARTICLES: Article[] = [
     url: 'https://example.com/typescript-5',
     description:
       'TypeScript 5.0의 주요 기능과 개선사항을 알아보고, 실무에 적용하는 방법을 소개합니다.',
-    thumbnailUrl: 'https://via.placeholder.com/600x400?text=TypeScript',
+    thumbnailUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ35Qqfexsha0k8HoioX5RExmp8nC1gHFjBcw&s',
     authorId: 'user-3',
     authorName: '박타입',
     createdAt: '2025-03-15T14:00:00Z',
@@ -46,7 +49,8 @@ const MOCK_ARTICLES: Article[] = [
     url: 'https://example.com/zustand-state',
     description:
       'Redux보다 간단하게 사용할 수 있는 Zustand로 React 애플리케이션의 상태를 관리하는 방법을 알아봅니다.',
-    thumbnailUrl: 'https://via.placeholder.com/600x400?text=Zustand',
+    thumbnailUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ35Qqfexsha0k8HoioX5RExmp8nC1gHFjBcw&s',
     authorId: CURRENT_USER_ID,
     authorName: '김개발',
     createdAt: '2025-03-18T11:00:00Z',
@@ -57,7 +61,8 @@ const MOCK_ARTICLES: Article[] = [
     url: 'https://example.com/shadcn-customizing',
     description:
       'ShadCN UI 컴포넌트를 프로젝트에 맞게 커스터마이징하는 방법과 주의사항을 소개합니다.',
-    thumbnailUrl: 'https://via.placeholder.com/600x400?text=ShadCN',
+    thumbnailUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ35Qqfexsha0k8HoioX5RExmp8nC1gHFjBcw&s',
     authorId: 'user-4',
     authorName: '최프론트',
     createdAt: '2025-03-20T08:45:00Z',

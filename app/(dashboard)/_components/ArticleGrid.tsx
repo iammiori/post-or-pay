@@ -1,6 +1,6 @@
 import { Article } from '@/app/_types/article';
 import { Skeleton } from '@/components/ui/skeleton';
-import { ArticleCard } from './artilce-card';
+import { ArticleCard } from './ArticleCard';
 
 interface ArticleGridProps {
   articles: Article[];

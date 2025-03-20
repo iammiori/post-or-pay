@@ -1,14 +1,14 @@
 // app/page.tsx
 'use client';
 
-import { useEffect, useState } from 'react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Calendar } from 'lucide-react';
-import { ArticleGrid } from './_components/artilc-grid';
-import DashboardHeader from './_components/header';
-import { MissionStatus } from './_components/mission-status';
-import { MonthlyProgress } from './_components/monthly-progress';
+import { useEffect, useState } from 'react';
+import { ArticleGrid } from './_components/ArticleGrid';
+import DashboardHeader from './_components/DashboardHeader';
+import { MissionStatus } from './_components/MissionStatus';
+import { MonthlyProgress } from './_components/MonthlyProgress';
 import { useArticles } from './_hooks/useArticle';
 
 export default function DashboardPage() {
