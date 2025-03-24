@@ -1,5 +1,4 @@
-// hooks/use-articles.ts
-import { Article, MonthlyProgressType } from '@/app/_types/article';
+import { Article, MonthlyProgressType } from '@/_types/article';
 import { useEffect, useState } from 'react';
 
 // 현재 사용자 ID (실제 구현에서는 인증 시스템과 연동)

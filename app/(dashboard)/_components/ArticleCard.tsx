@@ -1,7 +1,7 @@
-import { Article } from '@/app/_types/article';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Badge } from '@/_components/ui/badge';
+import { Button } from '@/_components/ui/button';
+import { Card, CardContent, CardFooter } from '@/_components/ui/card';
+import { Article } from '@/_types/article';
 import { CheckCircle, ImageOff, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
 
@@ -59,7 +59,8 @@ export function ArticleCard({
           href={article.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="block">
+          className="block"
+        >
           <h3 className="font-bold text-lg mb-2 line-clamp-2 hover:underline">
             {article.title}
           </h3>
@@ -75,7 +76,8 @@ export function ArticleCard({
           href={article.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-blue-600 hover:underline">
+          className="text-sm text-blue-600 hover:underline"
+        >
           읽어보기
         </a>
 
@@ -83,7 +85,8 @@ export function ArticleCard({
           size="sm"
           variant={hasCommented ? 'default' : 'outline'}
           onClick={() => onCommentToggle(article.id)}
-          className={hasCommented ? 'bg-green-600 hover:bg-green-700' : ''}>
+          className={hasCommented ? 'bg-green-600 hover:bg-green-700' : ''}
+        >
           {hasCommented ? (
             <>
               <CheckCircle className="mr-1 h-4 w-4" /> 댓글 작성 완료
