@@ -1,6 +1,5 @@
-// components/dashboard/monthly-progress.tsx
-import { MonthlyProgressType } from '@/app/_types/article';
-import { Progress } from '@/components/ui/progress';
+import { Progress } from '@/_components/ui/progress';
+import { MonthlyProgressType } from '@/_types/article';
 
 interface MonthlyProgressProps {
   progress: MonthlyProgressType;

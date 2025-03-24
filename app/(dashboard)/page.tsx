@@ -1,9 +1,12 @@
-// app/page.tsx
 'use client';
 
-import { Card, CardContent } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Calendar } from 'lucide-react';
+import { Card, CardContent } from '@/_components/ui/card';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@/_components/ui/tabs';
 import { useEffect, useState } from 'react';
 import { ArticleGrid } from './_components/ArticleGrid';
 import DashboardHeader from './_components/DashboardHeader';
@@ -12,6 +15,7 @@ import { MonthlyProgress } from './_components/MonthlyProgress';
 import { useArticles } from './_hooks/useArticle';
 
 export default function DashboardPage() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(
     new Date()
   );
@@ -28,7 +32,6 @@ export default function DashboardPage() {
     monthlyProgress,
   } = useArticles(selectedDate);
 
-  // 날짜가 변경될 때마다 월 문자열 업데이트
   useEffect(() => {
     if (selectedDate) {
       setMonth(
@@ -65,14 +68,7 @@ export default function DashboardPage() {
         </Card>
 
         <Card>
-          <CardContent className="p-4">
-            <Calendar
-              mode="single"
-              selected={selectedDate}
-              onSelect={setSelectedDate}
-              className="rounded-md border"
-            />
-          </CardContent>
+          <CardContent className="p-4">달력</CardContent>
         </Card>
       </div>
 

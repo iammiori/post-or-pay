@@ -1,5 +1,4 @@
-// components/dashboard/mission-status.tsx
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@/_components/ui/card';
 import { FileText, MessageSquare, Users } from 'lucide-react';
 
 interface MissionStatusProps {

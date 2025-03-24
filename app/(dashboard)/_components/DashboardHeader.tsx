@@ -1,5 +1,4 @@
-// components/dashboard/dashboard-header.tsx
-import { Button } from '@/components/ui/button';
+import { Button } from '@/_components/ui/button';
 import { PlusCircle } from 'lucide-react';
 import Link from 'next/link';
 
